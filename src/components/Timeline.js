@@ -16,16 +16,18 @@ const Timeline = () => {
   }, [])
   
   return (
-    <div>
+    <div className="timeline">
       <button onClick={() => { setNewPostModalVisible(!newPostModalVisible) }}>+ New Post</button>
       <CreatePostModal newPostModalVisible={newPostModalVisible} />
-      {
-        posts.map((post) => {
-          return(
-            <Post key={post.id} post={post} />
-          )
-        })
-      }
+      <div className="post-feed">
+        {
+          posts.map((post) => {
+            return(
+              <Post key={post.id} post={post} />
+            )
+          })
+        }
+      </div>
     </div>
   )
 }
