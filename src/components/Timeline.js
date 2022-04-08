@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Post from './Post';
 
 const Timeline = () => {
   const [posts, setPosts] = useState([])
@@ -16,12 +17,9 @@ const Timeline = () => {
     <div>
       <h2>Timeline</h2>
       {
-        posts.map((element) => {
+        posts.map((post) => {
           return(
-            <div>
-              <p>Post by {element.username}</p>
-              <p>{element.content}</p>
-            </div>
+            <Post post={post} />
           )
         })
       }
