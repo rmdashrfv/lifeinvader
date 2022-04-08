@@ -28,7 +28,7 @@ const Timeline = () => {
           })
         }
       </div>
-    </div>
+    </div>  
   )
 }
 
