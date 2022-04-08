@@ -6,3 +6,20 @@
   border: 1px solid #333;
   display: none;
 }
+
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 1% 5%;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.home-link {
+  font-size: 2em;
+  font-weight: bold;
+  color: #d33;
+  text-decoration: none;
+}
