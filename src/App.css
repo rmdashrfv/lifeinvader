@@ -53,5 +53,5 @@
 .post-feed {
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
+  gap: 2% 2%;
 }
